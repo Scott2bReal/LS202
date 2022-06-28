@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!-- Add 20 pixels padding to all four sides of the red div. Notice the
+  different widths again. Add a CSS property to both elements to ensure the
+  total width for each is 300px rather than 300px and then some. -->
+
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      div {
+        height: 300px;
+        width: 300px;
+        box-sizing: border-box;
+      }
+
+      .div-1 {
+        background-color: #fcc;
+        padding: 20px;
+      }
+
+      .div-2 {
+        background-color: #ccf;
+        border: 5px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-1">
+
+    </div>
+    <div class="div-2">
+
+    </div>
+  </body>
+</html>
+
+<!-- The blue div is a different size because its box-sizing property defaults
+  to content-box, which means the border property adds to the height and width
+  values. -->
