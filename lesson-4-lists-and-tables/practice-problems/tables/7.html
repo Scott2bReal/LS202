@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<!-- Without adding anything to the HTML, update the solution to the previous
+  problem to set the column headings to green, and the row headings to blue.
+-->
+
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      [scope="col"] {
+        background-color: green;
+      }
+
+      [scope="row"] {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Major</th>
+          <th scope="col">GPA</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">Chris Lee</th>
+          <td>Supply Chain Management</td>
+          <td>3.7</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Shane Riley</th>
+          <td>Photojournalism</td>
+          <td>3.8</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Kevin Wang</th>
+          <td>Computer Science</td>
+          <td>4.0</td>
+        </tr>
+      </tbody>
+
+    </table>
+  </body>
+</html>
