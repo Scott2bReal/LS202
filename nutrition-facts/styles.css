@@ -6,7 +6,7 @@
 html {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 28px;
 }
 
@@ -27,7 +27,7 @@ header {
 
 h1 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 p {
@@ -38,6 +38,10 @@ p {
 section:first-of-type {
   margin: 10px 15px;
   border-bottom: 15px solid black;
+}
+
+.indent {
+  display: inline-block;
 }
 
 h3:first-of-type {
@@ -100,4 +104,20 @@ th.indent {
   padding-left: 365px;
   padding-bottom: 4px;
   margin-top: 0;
+  box-sizing: content-box;
+  width: 300px;
+}
+
+dl.indent {
+  display: inline-block;
+  outline: 1px solid blue;
+}
+
+dl.indent > dt {
+  display: inline-block;
+  font-weight: normal;
+}
+
+dl.indent > dd {
+  display: inline-block;
 }
