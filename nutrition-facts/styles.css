@@ -98,6 +98,11 @@ tr {
   border-bottom: 1px solid black;
 }
 
+[scope="row"] {
+  text-align: left;
+  outline: 1px solid orange;
+}
+
 th.indent {
   outline: 1px solid red;
   display: inline-block;
@@ -110,6 +115,7 @@ th.indent {
 
 dl.indent {
   display: inline-block;
+  width: 100px;
   outline: 1px solid blue;
 }
 
@@ -120,4 +126,19 @@ dl.indent > dt {
 
 dl.indent > dd {
   display: inline-block;
+}
+
+sup {
+  vertical-align: super;
+}
+
+[colspan="3"] {
+  box-sizing: border-box;
+  text-align: right;
+  width: 680px;
+}
+
+td:last-of-type {
+  text-align: right;
+  font-weight: bold;
 }
