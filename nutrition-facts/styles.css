@@ -22,6 +22,7 @@ header {
   padding-bottom: 5px;
   margin-bottom: 0px;
   margin: 10px 15px 0;
+  border-bottom: 15px solid black;
 }
 
 header p {
@@ -65,26 +66,29 @@ header dl:first-of-type {
   margin-top: 5px;
 }
 
-header dl:first-of-type > dt {
+header dl:first-of-type dt {
   font-weight: bold;
-  display: inline-block;
-}
-
-header dl:first-of-type dd {
-  display: inline-block;
 }
 
 /* Calories from Fat */
 header dl:last-of-type {
   margin-top: 5px;
-  width: 70%;
+  margin-left: 1px;
+  width: 73.1%;
   text-align: right;
+  /* outline: solid red 1px; */
 }
 
-header dl:last-of-type dt {
-  display: inline-block;
+main table {
+  table-layout: fixed;
+  width: 96%;
+  margin-top: 9px;
+  margin-left: 15px;
 }
 
-header dl:last-of-type dd {
-  display: inline-block;
+/* % Daily Value */
+thead th {
+  width: 100%;
+  text-align: right;
+  padding-bottom: 2px;
 }
