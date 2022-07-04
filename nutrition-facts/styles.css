@@ -1,55 +1,44 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-td.indent {
-  display: inline-block;
-  border-top: none;
-  text-indent: 0.5rem;
-  width: 10%;
-  outline: 1px solid red;
-}
-
-html {
-  margin: 0;
-  padding: 0;
+html, body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 28px;
 }
 
 article {
-  height: 1280px;
   width: 680px;
-  margin: 8px;
+  padding: 10px 15px 15px 15px;
   border: 2px solid black;
   box-sizing: border-box;
 }
 
 header {
   padding-bottom: 5px;
-  margin-bottom: 0px;
-  margin: 10px 15px 0;
+  margin-bottom: 10px;
   border-bottom: 15px solid black;
+}
+
+header p {
+  margin: 0;
 }
 
 header p:last-of-type {
   border-bottom: 30px solid black;
   padding-bottom: 5px;
-  margin-bottom: 10px;
 }
 
 header h1 {
+  margin: 0;
   font-size: 2rem;
   font-weight: 600;
 }
 
-dl {
+header dl {
   display: inline-block;
+  margin: 0;
 }
 
 dd {
   display: inline;
+  margin: 0;
 }
 
 dt {
@@ -59,6 +48,7 @@ dt {
 /* Amount per serving */
 header h2:first-of-type {
   border-bottom: 1px solid black;
+  margin: 10px 0 0;
   padding-bottom: 10px;
   font-size: 1rem;
   font-weight: bold;
@@ -79,48 +69,43 @@ header dl:last-of-type {
 
 table {
   /* table-layout: fixed; */
+  width: 100%;
+  box-sizing: border-box;
   border-collapse: collapse;
   border-spacing: 0;
-  width: 100%;
-  margin: 11px 15px 10px 15px;
-}
-
-tr {
-  max-width: 100%;
-  box-sizing: border-box;
 }
 
 /* % Daily Value */
 thead th {
-  width: 100%;
   text-align: right;
   padding-top: 1px;
   padding-bottom: 1px;
+  outline: 1px solid green;
 }
 
 sup {
   vertical-align: 10%;
-}ibutes/aria-colspan
+}
 
 /* Main Table Body */
 tbody:first-of-type {
   border-bottom: 20px solid black;
 }
 
-tbody:first-of-type td {
-  border-top: 1px solid black;
-}
-
 tbody th {
   border-top: 1px solid black;
-  display: inline-block;
-  /* padding: 3px; */
-  width: 150%;
+  /* padding-top: 2px; */
+  text-align: left;
 }
 
-tbody tr {
-  /* border-top: 1px solid black; */
-  text-align: left;
+tbody dl {
+  margin: 0;
+}
+
+td.indent {
+  /* display: inline-block; */
+  border-top: none;
+  text-indent: 0.5rem;
 }
 
 tbody dd {
