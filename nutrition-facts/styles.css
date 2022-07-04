@@ -3,6 +3,13 @@
   padding: 0;
 }
 
+td.indent {
+  display: inline-block;
+  border-top: none;
+  text-indent: 0.5rem;
+  width: 150%;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -11,7 +18,7 @@ html {
 }
 
 article {
-  height: 800px;
+  height: 1280px;
   width: 680px;
   margin: 8px;
   border: 2px solid black;
@@ -46,11 +53,11 @@ dl {
 }
 
 dd {
-  display: inline-block;
+  display: inline;
 }
 
 dt {
-  display: inline-block;
+  display: inline;
 }
 
 /* Amount per serving */
@@ -76,19 +83,117 @@ header dl:last-of-type {
   margin-left: 1px;
   width: 73.1%;
   text-align: right;
-  /* outline: solid red 1px; */
 }
 
-main table {
-  table-layout: fixed;
-  width: 96%;
-  margin-top: 9px;
+table {
+  /* table-layout: fixed; */
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 95.4%;
+  margin-top: 11px;
   margin-left: 15px;
+}
+
+tbody td {
+  border-top: 1px solid black;
 }
 
 /* % Daily Value */
 thead th {
   width: 100%;
   text-align: right;
-  padding-bottom: 2px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+sup {
+  vertical-align: 10%;
+}
+
+/* Main Table Body */
+tbody:first-of-type {
+  border-bottom: 20px solid black;
+}
+
+tbody th {
+  border-top: 1px solid black;
+  display: inline-block;
+  padding: 3px;
+  width: 150%;
+}
+
+tbody tr {
+  /* border-top: 1px solid black; */
+  text-align: left;
+}
+
+tbody dd {
+  font-weight: normal;
+}
+
+tbody td:nth-child(3) {
+  border-top: 1px solid black;
+  text-align: right;
+  font-weight: bold;
+}
+
+tbody:nth-of-type(2) tr {
+  border-top: 1px solid black;
+  text-align: left;
+}
+
+tbody:nth-of-type(2) th {
+  font-weight: normal;
+  padding-top: 5px;
+}
+
+tbody:nth-of-type(2) td:nth-child(3) {
+  text-align: right;
+  font-weight: normal;
+}
+
+tfoot td{
+  border-top: 1px solid black;
+  font-size: 0.9rem;
+  padding-top: 10px;
+  text-indent: -0.6rem;
+  padding-left: 15px;
+  width: 95%;
+}
+
+table + table {
+  font-size: 0.8rem;
+}
+
+table + table tr {
+  border: none;
+}
+
+table + table thead th {
+  font-weight: normal;
+}
+
+th.indent {
+  text-indent: 1.1rem;
+}
+
+table + table thead th:first-of-type {
+  width: 250px;
+}
+
+table + table thead th + th {
+  text-align: left;
+}
+
+table:nth-of-type(2) tbody {
+  border-bottom: none;
+}
+
+table:nth-of-type(2) tbody th {
+  font-weight: normal;
+}
+
+table:nth-of-type(2) tbody td {
+  font-weight: normal;
+  text-align: left;
 }
