@@ -80,7 +80,6 @@ thead th {
   text-align: right;
   padding-top: 1px;
   padding-bottom: 1px;
-  outline: 1px solid green;
 }
 
 sup {
@@ -112,11 +111,21 @@ tbody dd {
   font-weight: normal;
 }
 
-tbody td:nth-child(3) {
+tbody tr td:nth-child(2) {
   border-top: 1px solid black;
+}
+
+tbody tr td:last-child {
   text-align: right;
   font-weight: bold;
+  border-top: 1px solid black;
 }
+
+/* tbody td:nth-child(3) { */
+/*   border-top: 1px solid black; */
+/*   text-align: right; */
+/*   font-weight: bold; */
+/* } */
 
 tbody:nth-of-type(2) tr {
   border-top: 1px solid black;
