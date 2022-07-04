@@ -7,7 +7,8 @@ td.indent {
   display: inline-block;
   border-top: none;
   text-indent: 0.5rem;
-  width: 150%;
+  width: 10%;
+  outline: 1px solid red;
 }
 
 html {
@@ -30,11 +31,6 @@ header {
   margin-bottom: 0px;
   margin: 10px 15px 0;
   border-bottom: 15px solid black;
-}
-
-header p {
-  font-size: 1rem;
-  font-weight: normal;
 }
 
 header p:last-of-type {
@@ -69,10 +65,6 @@ header h2:first-of-type {
 }
 
 /* Calories */
-header dl:first-of-type {
-  margin-top: 5px;
-}
-
 header dl:first-of-type dt {
   font-weight: bold;
 }
@@ -89,13 +81,13 @@ table {
   /* table-layout: fixed; */
   border-collapse: collapse;
   border-spacing: 0;
-  width: 95.4%;
-  margin-top: 11px;
-  margin-left: 15px;
+  width: 100%;
+  margin: 11px 15px 10px 15px;
 }
 
-tbody td {
-  border-top: 1px solid black;
+tr {
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* % Daily Value */
@@ -108,17 +100,21 @@ thead th {
 
 sup {
   vertical-align: 10%;
-}
+}ibutes/aria-colspan
 
 /* Main Table Body */
 tbody:first-of-type {
   border-bottom: 20px solid black;
 }
 
+tbody:first-of-type td {
+  border-top: 1px solid black;
+}
+
 tbody th {
   border-top: 1px solid black;
   display: inline-block;
-  padding: 3px;
+  /* padding: 3px; */
   width: 150%;
 }
 
