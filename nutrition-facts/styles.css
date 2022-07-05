@@ -142,6 +142,10 @@ tbody:nth-of-type(2) td:nth-child(3) {
   font-weight: normal;
 }
 
+tbody:nth-of-type(2) tr:last-of-type {
+  border-bottom: 1px solid black;
+}
+
 tfoot td{
   border-top: 1px solid black;
   font-size: 0.9rem;
@@ -149,6 +153,10 @@ tfoot td{
   text-indent: -0.6rem;
   padding-left: 15px;
   width: 95%;
+}
+
+tfoot td:last-of-type {
+  border-top: none;
 }
 
 table + table {
