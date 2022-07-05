@@ -8,6 +8,7 @@ article {
   padding: 10px 15px 15px 15px;
   border: 2px solid black;
   box-sizing: border-box;
+  margin-bottom: 7px;
 }
 
 header {
@@ -95,23 +96,28 @@ tbody th {
   border-top: 1px solid black;
   /* padding-top: 2px; */
   text-align: left;
+  padding: 2px 0;
 }
 
 tbody dl {
   margin: 0;
 }
 
+tbody td {
+  border-top: 1px solid black;
+  padding: 2px 0;
+}
+
 td.indent {
-  /* display: inline-block; */
   border-top: none;
-  text-indent: 0.5rem;
+  width: 4.35%;
 }
 
 tbody dd {
   font-weight: normal;
 }
 
-tbody tr td:nth-child(2) {
+td.indent + td {
   border-top: 1px solid black;
 }
 
@@ -121,10 +127,8 @@ tbody tr td:last-child {
   border-top: 1px solid black;
 }
 
-/* tbody td:nth-child(3) { */
-/*   border-top: 1px solid black; */
-/*   text-align: right; */
-/*   font-weight: bold; */
+/* tbody tr:last-of-type { */
+/*   padding: 2px 0; */
 /* } */
 
 tbody:nth-of-type(2) tr {
@@ -134,7 +138,7 @@ tbody:nth-of-type(2) tr {
 
 tbody:nth-of-type(2) th {
   font-weight: normal;
-  padding-top: 5px;
+  padding: 2px 0;
 }
 
 tbody:nth-of-type(2) td:nth-child(3) {
@@ -149,10 +153,10 @@ tbody:nth-of-type(2) tr:last-of-type {
 tfoot td{
   border-top: 1px solid black;
   font-size: 0.9rem;
-  padding-top: 10px;
-  text-indent: -0.6rem;
-  padding-left: 15px;
-  width: 95%;
+  text-indent: -0.7rem;
+  padding-top: 14px;
+  padding-left: 20px;
+  padding-bottom: 14px;
 }
 
 tfoot td:last-of-type {
@@ -163,24 +167,32 @@ table + table {
   font-size: 0.8rem;
 }
 
-table + table tr {
-  border: none;
-}
-
 table + table thead th {
   font-weight: normal;
 }
 
+table + table thead tr {
+  border-bottom: 1px solid black;
+}
+
 th.indent {
-  text-indent: 1.1rem;
+  text-indent: 1.2rem;
 }
 
 table + table thead th:first-of-type {
-  width: 250px;
+  width: 37%;
 }
 
-table + table thead th + th {
+table + table thead th {
   text-align: left;
+}
+
+table + table thead th:nth-of-type(2) {
+  width: 21%;
+}
+
+table + table tbody th {
+  border-top: none;
 }
 
 table:nth-of-type(2) tbody {
@@ -194,4 +206,5 @@ table:nth-of-type(2) tbody th {
 table:nth-of-type(2) tbody td {
   font-weight: normal;
   text-align: left;
+  border-top: none;
 }
