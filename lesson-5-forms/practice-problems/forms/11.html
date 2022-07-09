@@ -23,20 +23,89 @@ to save and share the filtered URL. -->
   <body>
     <form action="#" method="get">
       <fieldset>
+        <h1>Categories</h1>
         <ul>
           <li>
             <label>
-              Category
+              Core
+              <input type="radio" name="core" id="core">
             </label>
           </li>
-
           <li>
             <label>
-              Tags
+              Plugins and Libraries
+              <input type="radio" name="plugins" id="plugins">
+            </label>
+          </li>
+          <li>
+            <label>
+              Conventions
+              <input type="radio" name="conventions" id="conventions">
+            </label>
+          </li>
+          <li>
+            <label>
+              Reviews
+              <input type="radio" name="reviews" id="reviews">
+            </label>
+          </li>
+          <li>
+            <label>
+              Opinions
+              <input type="radio" name="opinions" id="opinions">
             </label>
           </li>
         </ul>
       </fieldset>
+      <fieldset>
+        <h1>Tags</h1>
+        <ul>
+          <li>
+            <label>
+              HTML
+              <input type="checkbox" name="html" id="html">
+            </label>
+          </li>
+          <li>
+            <label>
+              CSS
+              <input type="checkbox" name="css" id="css">
+            </label>
+          </li>
+          <li>
+            <label>
+              Javascript
+              <input type="checkbox" name="javascript" id="javascript">
+            </label>
+          </li>
+          <li>
+            <label>
+              Ruby
+              <input type="checkbox" name="ruby" id="ruby">
+            </label>
+          </li>
+          <li>
+            <label>
+              Rails
+              <input type="checkbox" name="rails" id="rails">
+            </label>
+          </li>
+          <li>
+            <label>
+              Python
+              <input type="checkbox" name="python" id="python">
+            </label>
+          </li>
+          <li>
+            <label>
+              Django
+              <input type="checkbox" name="django" id="django">
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <input type="submit" value="Filter" />
     </form>
   </body>
 </html>
