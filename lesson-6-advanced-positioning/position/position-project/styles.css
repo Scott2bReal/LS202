@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px Helvetica, Arial, sans-serif;
+}
+
+section {
+  border: 2px solid #777676;
+  padding: 20px;
+  margin: 0 auto;
+  width: 958px;
+}
+
+h1, h2, h3 {
+  color: #ce4a4a;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+.dotted-border {
+  border: 2px dotted gray;
+}
+
+.container {
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+  font: 16px Helvetica, Arial, sans-serif;
+  color: inherit;
+}
+
+a.with-margin {
+  margin: 30px;
+}
+
+a.padded-link {
+  padding: 30px;
+  background-color: green;
+}
