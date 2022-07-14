@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<!-- Change the left column from a fixed width to a variable width of 70% of
+  the parent's width. -->
+
+<html lang="en">
+  <head>
+    <title>Practice Problem 4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body, section, article, aside {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background-color: burlywood;
+      }
+
+      section {
+        max-width: 1000px;
+        margin: 0px auto;
+        background-color: seagreen;
+      }
+
+      section::after {
+        clear: both;
+        content: "";
+        display: block;
+      }
+
+      article, aside {
+        box-sizing: border-box;
+        padding: 1rem;
+      }
+
+      article {
+        width: 70%;
+        background-color: moccasin;
+        float: left;
+      }
+
+      aside {
+        float: none;
+        overflow: hidden;
+        background-color: rebeccapurple;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+        posuere turpis quam, ut mollis turpis tempus id. Vivamus congue
+        interdum neque. In elit ipsum, semper at consectetur vitae, pharetra ut
+        purus. Suspendisse potenti. Duis hendrerit, enim ac rutrum aliquam, dui
+        diam fringilla tortor, et hendrerit dui lectus a leo. Fusce in massa
+        lacinia, pellentesque diam cursus, blandit eros. Pellentesque rutrum
+        vel velit et egestas. Nunc ullamcorper lorem in dui molestie ultrices.
+        Sed sit amet libero nunc. Integer aliquet vestibulum neque. Aliquam
+        ultrices tellus ut nibh ultricies, ac vestibulum nibh ultrices.
+        Curabitur interdum ligula tellus, malesuada rutrum risus elementum
+        vitae. Nulla feugiat metus nisl, rhoncus placerat tortor mollis et.
+
+        Nam augue nulla, consectetur vel leo eget, mollis mattis orci.
+        Pellentesque convallis lacinia nisl, sed pulvinar neque pharetra ac.
+        Fusce placerat mollis mauris, sit amet iaculis neque vehicula ut. Etiam
+        nulla sem, accumsan vitae lobortis eu, dignissim ut purus. Fusce
+        molestie lorem nibh, a sollicitudin nulla porttitor eu. In suscipit
+        magna magna, a cursus orci varius auctor. Phasellus consequat ex
+        placerat bibendum vestibulum. Maecenas est urna, sodales et consequat
+        et, efficitur vel turpis. Proin malesuada, ante volutpat elementum
+        placerat, libero risus tincidunt ligula, id vulputate augue sapien sit
+        amet justo. Curabitur accumsan leo eu enim malesuada congue. Vestibulum
+        id tellus ut justo gravida rhoncus.
+
+        Ut non justo non nunc hendrerit pretium. Maecenas vehicula tristique
+        mollis. Ut bibendum, odio ut imperdiet lobortis, elit lectus tempus
+        quam, in consequat lorem mi et ante. Suspendisse potenti. Vivamus
+        dictum sed massa et pulvinar. Sed condimentum erat nunc, sollicitudin
+        hendrerit nibh pharetra auctor. Suspendisse potenti. Suspendisse in
+        elit sed ex iaculis elementum. Sed pharetra tincidunt faucibus. Duis
+        vitae semper lorem, a laoreet nisi. Morbi sapien neque, interdum id
+        cursus eget, imperdiet in dolor. Proin sit amet lectus interdum,
+        facilisis nisl quis, euismod nibh. Suspendisse potenti. In eget metus
+        mi. Cras non massa euismod, vulputate enim id, fringilla libero.
+
+        Nulla tincidunt odio nec gravida convallis. Sed egestas diam vel purus
+        laoreet cursus. Nulla facilisi. Etiam congue, lacus in bibendum
+        finibus, nunc odio blandit risus, a gravida nunc dui eget ligula.
+        Curabitur ligula augue, consequat non auctor quis, sollicitudin eu
+        erat. Praesent fermentum tincidunt magna ut laoreet. Aenean id ex ac
+        libero ultrices vestibulum. Proin pulvinar ac diam nec sodales. Etiam
+        eu viverra sem, eget efficitur lorem. Vestibulum euismod lorem eu urna
+        tincidunt sodales. Duis congue lectus mauris, a euismod turpis rutrum
+        ultricies. Fusce iaculis mollis libero, rutrum finibus nisl scelerisque
+        nec. Integer eleifend viverra vehicula. Aliquam vitae nisi ut leo
+        tristique tempus.
+
+        Etiam vitae ultrices massa. Fusce eget auctor diam, eu mattis nunc.
+        Suspendisse tristique, nisl sit amet tristique varius, eros ante
+        imperdiet quam, non volutpat sapien leo ut risus. Orci varius natoque
+        penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin
+        luctus blandit quam non imperdiet. Vestibulum id nisl at augue auctor
+        porttitor sed at leo. Suspendisse hendrerit neque vel sem hendrerit
+        eleifend. Phasellus sit amet lectus et elit vulputate semper. Nulla
+        bibendum nisi at orci pellentesque elementum. Nam ac nisl id quam
+        tempor hendrerit. Pellentesque et efficitur ante. Nulla facilisi.
+      </article>
+      <aside>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum
+      </aside>
+    </section>
+  </body>
+</html>
