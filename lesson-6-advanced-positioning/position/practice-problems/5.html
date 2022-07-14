@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<!-- Create a new element inside the #positioned container. Starting with the
+  CSS below, move the new item partially outside the parent's boundaries by
+  10px to the left and top. To ensure you can see everything, move the parent
+element down from the top of the page. -->
+
+<html lang="en">
+  <head>
+    <title>Practice Problem 5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        background-color: gray;
+      }
+
+      section {
+        background-color: white;
+        margin: 10px auto;
+      }
+
+      #positioned {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        height: 100px;
+        margin-left: -200px;
+        background-color: moccasin;
+        width: 400px;
+        z-index: 3;
+        top: 20px;
+      }
+
+      #second-element {
+        background-color: rgba(0, 0, 0, .6);
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        position: fixed;
+        left: 0;
+      }
+
+      #outside-positioned {
+        background-color: pink;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        margin: 0;
+      }
+
+      section p {
+        font-size: 2rem;
+        padding: 1rem;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>
+        Sint cillum tempor esse eu laborum ipsum eu. Cupidatat sint laboris
+        excepteur eu enim adipisicing officia. Sunt cupidatat id ipsum
+        reprehenderit et irure veniam ex. Duis cupidatat ullamco adipisicing
+        mollit ea nulla irure mollit eu. Aliqua laboris aute sint consectetur
+        aute occaecat cillum sint aliqua. Culpa eiusmod officia Lorem dolore.
+      </p>
+      <p>
+        Dolor proident mollit eiusmod. Cupidatat Lorem ipsum irure culpa quis.
+        Non consequat sunt non nostrud sint id quis consectetur aute.
+        Exercitation nisi tempor excepteur. Magna exercitation ad amet ut commodo
+        consequat non. Duis veniam culpa esse magna laborum aute sunt quis.
+      </p>
+      <p>
+        Ut efficitur neque rhoncus velit pulvinar tempus varius non nibh. Morbi
+        ullamcorper, justo a fringilla placerat, dolor orci porttitor dolor, non
+        consequat mi odio at odio. Nulla varius facilisis rutrum. Quisque mattis
+        nibh non ligula laoreet volutpat. Ut commodo lobortis urna, sit amet
+        ultrices felis venenatis et. Etiam erat ipsum, ornare suscipit sapien
+        quis, hendrerit congue elit. Morbi eget orci blandit, pharetra massa
+        vitae, vestibulum risus. Nulla nec facilisis urna. Mauris finibus tellus
+        nisl, vel porttitor dui facilisis ac. Nunc interdum neque sit amet ex
+        semper, eget finibus magna sodales. Nam et fermentum libero, in pharetra
+        urna. Nulla posuere est blandit nulla feugiat, sed lacinia tellus
+        blandit. Nulla facilisi. In luctus feugiat egestas.
+      </p>
+    </section>
+
+    <div id="second-element"></div>
+
+    <div id="positioned">
+      I'm Positioned!
+      <div id="outside-positioned"></div>
+    </div>
+  </body>
+</html>
