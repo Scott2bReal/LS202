@@ -26,6 +26,15 @@ header {
   text-align: center;
 }
 
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  flex-grow: 1;
+}
+
 main {
   width: 100%;
 }
@@ -33,7 +42,7 @@ main {
 footer ul {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 footer li {
@@ -44,5 +53,5 @@ footer li {
 img {
   max-height: 100%;
   min-width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
